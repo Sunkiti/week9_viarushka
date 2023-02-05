@@ -1,0 +1,134 @@
+@font-face {
+    src: url("/assets/fonts/IntroDemoCond-LightCAPS.otf");
+    /* url("") format("woff"); */
+    font-family: 'Intro'; 
+}
+.ellipse_violet{
+    background-color: #5222D0;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    right: 86.07%;
+    top: 0%;
+    bottom: 30%;
+}
+.ellipse_red{
+    background-color: #EC615B;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10.97%;
+    right: 51.1%;
+    top: 3%;
+    bottom: 0%;
+}
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    margin-left: 0px;
+}
+.navigation__cart {
+    grid-area: 1/7/2/8;
+}
+.navigation__cart__cart{
+    background: #5222D0;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    height: 38px;
+    width: 115px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45% 25% 15%;
+    grid-template-areas: 
+    "slogan image"
+    "explanation image"
+    "button image";
+    margin: 100px;
+}
+.main__slogan {
+    grid-area: slogan;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4em;
+}
+.main__explanation {
+    grid-area: explanation;
+    font-weight: 300;
+    font-size: 20px;
+}
+.main__button {
+    grid-area: button;
+}
+.main__button__button {
+    font-weight: 400;
+    font-size: 35px;
+    background: #5222D0;
+    border-radius: 100px;
+    width: 270px;
+    height: 84px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+}
+#image {
+    grid-area: image;
+    width: 100%;
+    background: #E5E5E5;
+}
+.footer {
+    display: grid;
+    grid-template-areas: 
+    "choice choice choice choice";
+    color: #5222D0;
+    font-size: 20px;
+    margin-right: 250px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.choice {
+    grid-area: choice;
+}
+@media (max-width: 992px){
+    .main__slogan {
+        font-size: 1em;
+    }
+    .main__button__button{
+        font-size: 1em;
+        width: 100%;
+        height: 100%;
+    }
+    .main__explanation {
+        font-size: 0,5em;
+    }
+    .footer {
+        font-size: 1em;
+    }
+}
+@media (max-width: 767px){
+    .main__slogan {
+        font-size: 1em;
+    }
+    .main__button__button{
+        font-size: 1em;
+        width: 100%;
+        height: 100%;
+    }
+    .main__explanation {
+        font-size: 0.5em;
+    }
+    .footer {
+        font-size: 0.5em;
+    }
+}
